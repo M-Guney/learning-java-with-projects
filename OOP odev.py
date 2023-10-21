@@ -1,5 +1,3 @@
-# 122 ders de kaldın
-
 #?          0 ile 100  arasından 1000 random sayı oluşturmak
 #?              çift ve tek sayıların ortalamasını bul
 
@@ -60,20 +58,4 @@ Yes, you can use a list comprehension with a lambda function to achieve the same
 numbers = [1, 2, 3, 4, 5]
 squared_numbers = [(lambda x: x ** 2)(num) for num in numbers]
 print(squared_numbers)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 """
