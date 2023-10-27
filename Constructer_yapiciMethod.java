@@ -2,15 +2,19 @@ package BTK;
 
 class Cokgen{
     int en,boy,yukseklik;
+    /*this anahtar kelimesinin kullanım amacı,
+     sınıfın alanları ile constructor'ın parametreleri aynı isimde olduğunda bu alanları ayırt etmek içindir.
+    Bu sayede constructor'ın parametreleriyle sınıfın alanları karıştırılmaz. this kullanılmasa bile kod çalışır, */
     Cokgen(){
         this.en = 5;
         this.boy = 10;
         this.yukseklik = 15;
     }
     Cokgen(int en,int boy,int yukseklik){
-        this.en= en;
-        this.boy = boy;
-        this.yukseklik = yukseklik;
+        this.en = en; // Bu durumda en parametresi ile sınıfın en alanı karıştırılır
+        this.boy = boy; // boy parametresi ile sınıfın boy alanı karıştırılır
+        this.yukseklik = yukseklik; // yukseklik parametresi ile sınıfın yukseklik alanı karıştırılır
+
     }
     int hacim(){
         return this.en*this.boy*this.yukseklik;
